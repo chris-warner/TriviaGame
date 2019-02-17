@@ -25,7 +25,7 @@ p {
 
 .box {
     border: aqua outset 2px;
-    width: 98%;
+    width: 100%;
     height: auto;
 }
 
@@ -36,10 +36,15 @@ footer {
 
 #displayDiv {
     color: aqua;
+    font-size: 34pt;
 }
 
 .questionDiv {
     color: aqua;
+}
+
+.displayDiv {
+    font-size: 34pt;
 }
 
 #btnNewgame {
