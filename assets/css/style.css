@@ -1,0 +1,55 @@
+h1 {
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+    color: cyan;
+    border: 2px outset purple;
+    height: 160;
+    padding: 90;
+    font-size: 40px;
+}
+
+h2 {
+    text-align: center;
+    text-emphasis: bold;
+    color: aqua;
+}
+
+body {
+    background-color: black;
+}
+
+p {
+    color: cyan;
+    font-size: 26px;
+}
+
+.box {
+    border: aqua outset 2px;
+    width: 98%;
+    height: auto;
+}
+
+footer {
+    height: 30px;
+    border: purple 2px outset;
+}
+
+#displayDiv {
+    color: aqua;
+}
+
+.questionDiv {
+    color: aqua;
+}
+
+#btnNewgame {
+    height: 80px;
+    width: 100px;
+    color: cyan;
+    background-color: black;
+    align-self: center;
+}
+
+form {
+    color: cyan;
+}
