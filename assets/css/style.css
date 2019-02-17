@@ -69,3 +69,21 @@ p {
 form {
     color: cyan;
 }
+
+@media only screen and (max-width: 600px) {
+    #btnNewgame {
+        height: 80px;
+        width: 180px;
+        color: cyan;
+        background-color: black;
+        align-self: center;
+        margin: 0;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+        border-color: purple;
+        margin-top: 200px;
+    }
+}
