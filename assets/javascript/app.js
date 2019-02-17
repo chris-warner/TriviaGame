@@ -24,7 +24,7 @@ function countDown(i) {
 
 
 function newGame() {
-    countDown(3);
+    countDown(30);
 }
 
 //If timer is 0, call this function. When the game is finished, this concluded the score and handles the reset.
