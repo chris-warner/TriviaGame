@@ -4,8 +4,8 @@ var score;
 var wins = 0;
 var losses = 0;
 var Unanswered = 0;
-var int;
 
+var int;
 
 $(".questionDiv").hide();
 $("#btnDone").hide();
@@ -18,8 +18,7 @@ $("#btnNewgame").click(function() {
 });
 
 $("#btnDone").click(function() {
-    clearInterval(int);
-    $("displayDiv").hide();
+    window.clearInterval(int);
     timeup();
 });
 
@@ -37,14 +36,13 @@ function newGame() {
 
 //If timer is 0, call this function. When the game is finished, this concluded the score and handles the reset.
 function timeup() {
-    //alert("time is up!");
-    //Hide the questions
     $("#btnDone").hide();
     $(".questionDiv").hide();
     calculateScore();
 }
 
 function calculateScore() {
+    Unanswered = 0;
     $(function() {
 
         //Question 1
@@ -124,6 +122,7 @@ function displayScore() {
     wins = 0;
     losses = 0;
     Unanswered = 0;
+
     $("input[name=question1]").prop("checked", false);
     $("input[name=question2]").prop("checked", false);
     $("input[name=question3]").prop("checked", false);
@@ -131,3 +130,9 @@ function displayScore() {
     $("input[name=question5]").prop("checked", false);
     $("input[name=question6]").prop("checked", false);
 }
+
+$("#btnDone").click(function() {
+
+    clearInterval(int);
+    $("displayDiv").hide();
+});
