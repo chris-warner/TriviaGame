@@ -31,7 +31,7 @@ function countDown(i) {
 
 
 function newGame() {
-    countDown(30);
+    countDown(60);
 }
 
 //If timer is 0, call this function. When the game is finished, this concluded the score and handles the reset.
@@ -122,7 +122,6 @@ function displayScore() {
     wins = 0;
     losses = 0;
     Unanswered = 0;
-
     $("input[name=question1]").prop("checked", false);
     $("input[name=question2]").prop("checked", false);
     $("input[name=question3]").prop("checked", false);
