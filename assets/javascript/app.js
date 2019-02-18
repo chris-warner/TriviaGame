@@ -4,19 +4,27 @@ var score;
 var wins = 0;
 var losses = 0;
 var Unanswered = 0;
-
+var int;
 
 
 $(".questionDiv").hide();
+$("#btnDone").hide();
 
 $("#btnNewgame").click(function() {
     newGame();
     $(".questionDiv").show();
     $(this).hide();
+    $("#btnDone").show();
+});
+
+$("#btnDone").click(function() {
+    clearInterval(int);
+    $("displayDiv").hide();
+    timeup();
 });
 
 function countDown(i) {
-    var int = setInterval(function() {
+    int = setInterval(function() {
         document.getElementById("displayDiv").innerHTML = "Time Left: " + i;
         i-- || clearInterval(timeup()) & clearInterval(int); //if i is 0, then stop the interval and call timeup() function.
     }, 1000);
@@ -31,12 +39,12 @@ function newGame() {
 function timeup() {
     //alert("time is up!");
     //Hide the questions
+    $("#btnDone").hide();
     $(".questionDiv").hide();
     calculateScore();
 }
 
 function calculateScore() {
-    Unanswered = 0;
     $(function() {
 
         //Question 1
@@ -116,7 +124,6 @@ function displayScore() {
     wins = 0;
     losses = 0;
     Unanswered = 0;
-
     $("input[name=question1]").prop("checked", false);
     $("input[name=question2]").prop("checked", false);
     $("input[name=question3]").prop("checked", false);

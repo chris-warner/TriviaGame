@@ -66,6 +66,19 @@ p {
     border-color: purple;
 }
 
+.button1 {
+    height: 80px;
+    width: 180px;
+    color: cyan;
+    background-color: black;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    border-color: purple;
+    position: static;
+    bottom: auto;
+    align-self: center;
+}
+
 form {
     color: cyan;
 }
