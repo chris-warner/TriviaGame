@@ -3,6 +3,16 @@
     src: url("assets/fonts/DisplayOTF.otf");
 }
 
+body {
+    background-image: url("../Images/background.png");
+    background-repeat: no-repeat;
+    height: 500px;
+    /* You must set a specified height */
+    background-size: cover;
+    /* Center the image */
+    background-color: black;
+}
+
 h1 {
     font-family: "DisplayOTF";
     text-align: center;
@@ -28,10 +38,6 @@ h2 {
     text-align: center;
     text-emphasis: bold;
     color: aqua;
-}
-
-body {
-    background-color: black;
 }
 
 p {
@@ -62,7 +68,7 @@ p {
     height: 80px;
     width: 180px;
     color: cyan;
-    background-color: black;
+    background-color: transparent;
     align-self: center;
     margin: 0;
     position: absolute;
@@ -70,7 +76,6 @@ p {
     left: 50%;
     -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
-    border-color: purple;
 }
 
 .btnDone {
@@ -90,7 +95,7 @@ form {
         height: 80px;
         width: 180px;
         color: cyan;
-        background-color: black;
+        background-color: transparent;
         align-self: center;
         margin: 0;
         position: absolute;
@@ -99,6 +104,6 @@ form {
         -ms-transform: translate(-50%, -50%);
         transform: translate(-50%, -50%);
         border-color: purple;
-        margin-top: 400px;
+        margin-top: 350px;
     }
 }
