@@ -117,7 +117,7 @@ function calculateScore() {
 function displayScore() {
     //alert($('input[name=question1]:checked').val());
     // alert("Correct: " + wins + " " + "Incorrect: " + losses);
-    document.getElementById("displayDiv").innerHTML = "Answeres correct: " + wins + " " + "Incorrect: " + losses + " " + "Unanswered: " + Unanswered;
+    document.getElementById("displayDiv").innerHTML = "Answeres Correct: " + wins + " " + "Incorrect: " + losses + " " + "Unanswered: " + Unanswered;
     $("#btnNewgame").show();
     wins = 0;
     losses = 0;

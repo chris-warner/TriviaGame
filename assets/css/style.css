@@ -1,11 +1,18 @@
+@font-face {
+    font-family: "DisplayOTF";
+    src: url("assets/fonts/DisplayOTF.otf");
+}
+
 h1 {
-    font-family: 'Times New Roman', Times, serif;
+    font-family: "DisplayOTF";
     text-align: center;
     color: cyan;
-    border: 2px outset purple;
+    /* border: 2px outset purple; */
     height: 160;
-    padding: 90;
-    font-size: 40px;
+    padding: 100;
+    margin-top: 20px;
+    font-size: 100px;
+    margin-bottom: 10px;
 }
 
 .center {
@@ -63,6 +70,14 @@ p {
     left: 50%;
     -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
+    border-color: purple;
+}
+
+.btnDone {
+    height: 80px;
+    width: 180px;
+    color: cyan;
+    background-color: black;
     border-color: purple;
 }
 
