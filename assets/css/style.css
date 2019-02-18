@@ -1,6 +1,6 @@
 @font-face {
     font-family: "Display";
-    src: url("assets/fonts/DisplayOTF.ttf");
+    src: url("assets/fonts/DisplayOTF.ttf") format('truetype');
 }
 
 body {
