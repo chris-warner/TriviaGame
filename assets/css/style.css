@@ -1,6 +1,6 @@
 @font-face {
-    font-family: "DisplayOTF";
-    src: url("assets/fonts/DisplayOTF.otf");
+    font-family: "Display";
+    src: url("assets/fonts/DisplayOTF.ttf");
 }
 
 body {
@@ -104,6 +104,6 @@ form {
         -ms-transform: translate(-50%, -50%);
         transform: translate(-50%, -50%);
         border-color: purple;
-        margin-top: 350px;
+        margin-top: 300px;
     }
 }
