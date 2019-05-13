@@ -1,5 +1,7 @@
 # TriviaGame 
 
+## Technologies used in this project: html, css, javascript and jquery.
+
 # How to Play
 
 ````
